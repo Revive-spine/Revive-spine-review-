@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Revive Spine Physiotherapy - Review</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  font-family:Arial,sans-serif;
+  margin:0;
+  background:linear-gradient(135deg,#eef7ff,#f8fbff);
+  color:#172033
+}
+.w{max-width:540px;margin:auto;padding:18px}
+.c{
+  background:#fff;
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 6px 25px #0002
+}
+h1{
+  font-size:25px;
+  text-align:center;
+  margin:0 0 6px
+}
+.sub{
+  color:#667085;
+  text-align:center;
+  margin-bottom:18px;
+  line-height:1.5
+}
+.opt,.g,.copy,.back{
+  width:100%;
+  padding:14px;
+  margin:6px 0;
+  border:0;
+  border-radius:13px;
+  font-size:16px;
+  cursor:pointer
+}
+.opt{
+  background:#eef5ff;
+  text-align:left;
+  font-weight:600
+}
+.opt:hover{background:#dcecff}
+.panel{display:none}
+.review{
+  border:1px solid #ddd;
+  border-radius:14px;
+  padding:14px;
+  margin:12px 0;
+  background:#fafcff
+}
+.stars{font-size:18px}
+.review p{
+  line-height:1.55;
+  margin:9px 0 12px
+}
+.copy{
+  background:#172033;
+  color:white
+}
+.g{
+  background:#1a73e8;
+  color:white;
+  font-weight:bold;
+  margin-top:10px
+}
+.back{
+  background:#eef2f6;
+  color:#172033
+}
+.note{
+  font-size:12px;
+  color:#667085;
+  line-height:1.5;
+  margin-top:16px;
+  text-align:center
+}
+</style>
+</head>
+
+<body>
+
+<div class="w">
+<div class="c">
+
+<h1>Revive Spine Physiotherapy</h1>
+
+<div class="sub">
+आपको किस समस्या के लिए Physiotherapy ली थी?
+</div>
+
+<div id="options">
+
+<button class="opt" onclick="show('back')">🦴 Back Pain</button>
+<button class="opt" onclick="show('neck')">🧠 Neck Pain</button>
+<button class="opt" onclick="show('knee')">🦵 Knee Pain</button>
+<button class="opt" onclick="show('sciatica')">⚡ Sciatica Pain</button>
+<button class="opt" onclick="show('shoulder')">💪 Shoulder Pain</button>
+<button class="opt" onclick="show('ankle')">🦶 Ankle Pain</button>
+<button class="opt" onclick="show('hip')">🦴 Hip Pain</button>
+<button class="opt" onclick="show('stiffness')">💪 Muscle Stiffness</button>
+<button class="opt" onclick="show('paralysis')">🧑‍🦽 Paralysis</button>
+<button class="opt" onclick="show('sports')">🏃 Sports Injury</button>
+<button class="opt" onclick="show('other')">✏️ Other</button>
+
+</div>
+
+<!-- BACK PAIN -->
+<div id="back" class="panel">
+<h2>Back Pain</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had physiotherapy for back pain and found the sessions helpful. The exercises were explained clearly and the treatment was handled professionally.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My experience with physiotherapy for back pain was good. The treatment was personalized and the exercises were easy to understand.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I visited Revive Spine Physiotherapy for back pain. I had a positive experience and appreciated the professional approach and guidance.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- NECK -->
+<div id="neck" class="panel">
+<h2>Neck Pain</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I took physiotherapy for neck pain and had a good experience. The exercises were explained clearly and the treatment was professional.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My neck pain physiotherapy sessions were well guided and personalized. I appreciated the professional care and exercise guidance.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience during my physiotherapy sessions for neck pain. The therapist explained everything clearly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- KNEE -->
+<div id="knee" class="panel">
+<h2>Knee Pain</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I took physiotherapy for knee pain and had a good experience. The exercises were explained clearly and the treatment was personalized.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My knee physiotherapy sessions were professional and well guided. I was given exercises according to my condition.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience with my knee pain physiotherapy treatment. The therapist was supportive and explained the exercises properly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- SCIATICA -->
+<div id="sciatica" class="panel">
+<h2>Sciatica Pain</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I took physiotherapy for sciatica and had a good experience. The exercises were explained clearly and the treatment was professional.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My sciatica physiotherapy sessions were well guided and personalized. I appreciated the professional approach and exercise guidance.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience with physiotherapy for sciatica. The therapist explained the exercises properly and guided me throughout the sessions.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- SHOULDER -->
+<div id="shoulder" class="panel">
+<h2>Shoulder Pain</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I took physiotherapy for shoulder pain and had a good experience. The treatment was professional and the exercises were explained clearly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My shoulder physiotherapy sessions were personalized and well guided. I appreciated the professional care and exercise guidance.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience with shoulder pain physiotherapy. The therapist was supportive and explained the exercises properly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- ANKLE -->
+<div id="ankle" class="panel">
+<h2>Ankle Pain</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I took physiotherapy for ankle pain and had a good experience. The treatment was professional and personalized.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My ankle physiotherapy sessions were well guided. The exercises were explained clearly and suited to my condition.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience during my ankle pain physiotherapy treatment. The therapist provided good guidance throughout the sessions.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- HIP -->
+<div id="hip" class="panel">
+<h2>Hip Pain</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I took physiotherapy for hip pain and had a good experience. The exercises were explained clearly and the treatment was professional.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My hip physiotherapy sessions were personalized and well guided. I appreciated the professional approach and clear exercise instructions.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience with physiotherapy for hip pain. The therapist was supportive and explained the exercises properly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- MUSCLE STIFFNESS -->
+<div id="stiffness" class="panel">
+<h2>Muscle Stiffness</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I took physiotherapy for muscle stiffness and had a good experience. The exercises were explained clearly and the treatment was professional.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>The physiotherapy sessions for muscle stiffness were well guided and personalized. I appreciated the professional care and exercise guidance.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience with physiotherapy for muscle stiffness. The therapist explained the exercises clearly and guided me properly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- PARALYSIS -->
+<div id="paralysis" class="panel">
+<h2>Paralysis</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I received physiotherapy support for paralysis-related mobility difficulties. The sessions were professional and well guided.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>The physiotherapy sessions were supportive and tailored to the patient's needs. The exercises and guidance were explained clearly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience with the physiotherapy care. The therapist was supportive, professional and attentive throughout the sessions.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- SPORTS -->
+<div id="sports" class="panel">
+<h2>Sports Injury</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I received physiotherapy for a sports injury and had a good experience. The treatment and exercises were explained clearly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My sports injury physiotherapy sessions were professional and well guided. The exercises were tailored to my needs.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a positive experience with physiotherapy for my sports injury. The therapist provided clear guidance and support.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<!-- OTHER -->
+<div id="other" class="panel">
+<h2>Other</h2>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I had a good experience at Revive Spine Physiotherapy. The treatment was professional and the exercises were explained clearly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>My experience at Revive Spine Physiotherapy was positive. I appreciated the personalized treatment and professional guidance.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<div class="review"><div class="stars">★★★★★</div>
+<p>I was happy with my physiotherapy experience. The therapist was professional, supportive and explained the exercises properly.</p>
+<button class="copy" onclick="cp(this)">📋 Copy Review</button>
+</div>
+
+<button class="g" onclick="go()">⭐ Write Google Review</button>
+<button class="back" onclick="home()">← Choose Another Problem</button>
+</div>
+
+<div class="note">
+Review suggestion को अपनी वास्तविक experience के अनुसार पढ़ें और जरूरत हो तो edit करें।
+Google पर review ग्राहक स्वयं submit करेगा।
+</div>
+
+</div>
+</div>
+
+<script>
+
+function show(id){
+  document.getElementById('options').style.display='none';
+
+  document.querySelectorAll('.panel').forEach(function(x){
+    x.style.display='none';
+  });
+
+  document.getElementById(id).style.display='block';
+
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+}
+
+function home(){
+  document.querySelectorAll('.panel').forEach(function(x){
+    x.style.display='none';
+  });
+
+  document.getElementById('options').style.display='block';
+
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+}
+
+function cp(button){
+
+  var text = button.parentElement.querySelector('p').innerText;
+
+  if(navigator.clipboard && window.isSecureContext){
+
+    navigator.clipboard.writeText(text).then(function(){
+
+      button.innerText='✅ Copied!';
+
+      setTimeout(function(){
+        button.innerText='📋 Copy Review';
+      },2000);
+
+    }).catch(function(){
+      fallbackCopy(text,button);
+    });
+
+  }else{
+    fallbackCopy(text,button);
+  }
+}
+
+function fallbackCopy(text,button){
+
+  var textarea=document.createElement('textarea');
+
+  textarea.value=text;
+  textarea.style.position='fixed';
+  textarea.style.opacity='0';
+
+  document.body.appendChild(textarea);
+
+  textarea.focus();
+  textarea.select();
+
+  try{
+    document.execCommand('copy');
+
+    button.innerText='✅ Copied!';
+
+    setTimeout(function(){
+      button.innerText='📋 Copy Review';
+    },2000);
+
+  }catch(e){
+
+    alert('Please select and copy the review manually.');
+
+  }
+
+  document.body.removeChild(textarea);
+}
+
+function go(){
+
+  window.location.href=
+  'https://g.page/r/CfZif_Wyi3WjEBM/review';
+
+}
+
+</script>
+
+</body>
+</html>
